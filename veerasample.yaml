@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+   - name: install git software
+     apt:
+      name: git
+      state: present
+   - name: iwant to ping
+     ping:
+   - name: i want install wget
+     apt:
+      name: wget
+      status: present 
