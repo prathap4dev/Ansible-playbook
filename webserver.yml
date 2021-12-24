@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want install webserver
+  - name: i want to install git
     apt:
-     name: apache2
+     name: git
      status: present
